@@ -45,7 +45,7 @@ local-docker:
 		--build-arg VERSION=$(VERSION) \
 		--build-arg GITCOMMIT=$(GITCOMMIT) \
 		--build-arg BUILDTIME='$(BUILDTIME)' \
-		-f ./Dockerfile -t $(DOCKER_ORG)/$(APP):local .
+		-f ./Dockerfile -t $(DOCKER_ORG)/$(APP):preUberFx .
 
 binaries: generate
 	mkdir -p ./.ignore
